@@ -1,0 +1,21 @@
+.smiley-scale {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.smiley-scale label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.smiley-scale input[type="radio"] {
+    margin-top: 10px;
+}
+
+.smiley {
+    font-size: 2em;
+}
