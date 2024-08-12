@@ -1,5 +1,5 @@
 .header {
-  height: 250px; 
+  height: 20vh; 
   display: flex;
   padding: 2%;
   align-items: center;
@@ -19,3 +19,7 @@
   z-index: 1; 
   position: relative; }
 
+.logo{
+  width: 13vw;
+  height: 7vw;
+}

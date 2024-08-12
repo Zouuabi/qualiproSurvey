@@ -1,13 +1,9 @@
 
-  .intro-heading {
+  .section {
     font-size: 1.5em; 
     font-weight: bold; 
     margin-bottom: 10px; 
     color: #333; 
   }
   
-  .intro-content {
-    font-size: 1em; 
-    color: #666; 
-    line-height: 1.5; 
-  }
+
