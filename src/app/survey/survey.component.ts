@@ -4,11 +4,12 @@ import { SimpleMatrixComponent } from "../simple-matrix/simple-matrix.component"
 import { DoubleMatrixComponent } from "../double-matrix/double-matrix.component";
 import { LinearScaleComponent } from "../linear-scale/linear-scale.component";
 import { FreeResponseComponent } from "../free-response/free-response.component";
+import { MainQuestionComponent } from "../main-question/main-question.component";
 
 @Component({
   selector: 'app-survey',
   standalone: true,
-  imports: [MultipleChoiceComponent, SimpleMatrixComponent, DoubleMatrixComponent, LinearScaleComponent, FreeResponseComponent],
+  imports: [MultipleChoiceComponent, SimpleMatrixComponent, DoubleMatrixComponent, LinearScaleComponent, FreeResponseComponent, MainQuestionComponent],
   templateUrl: './survey.component.html',
   styleUrl: './survey.component.css'
 })
