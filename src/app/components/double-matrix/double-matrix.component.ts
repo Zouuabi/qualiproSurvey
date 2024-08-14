@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './double-matrix.component.css'
 })
 export class DoubleMatrixComponent {
+  
 
 }
