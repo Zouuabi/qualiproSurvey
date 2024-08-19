@@ -51,6 +51,6 @@ export class SurveyComponent implements OnInit {
 
   onSubmit() {
     const payload = JSON.stringify(this.survey.getRawValue());
-    // Handle submission logic
+    
   }
 }
