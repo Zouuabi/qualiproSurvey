@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Question } from '../../models/question.model';
 
 @Component({
   selector: 'app-multiple-choice',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './multiple-choice.component.css'
 })
 export class MultipleChoiceComponent {
-
+  @Input() question! : Question ;
 }

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Question } from '../../models/question.model';
 
 @Component({
   selector: 'app-simple-matrix',
@@ -8,5 +9,6 @@ import { Component } from '@angular/core';
   styleUrl: './simple-matrix.component.css'
 })
 export class SimpleMatrixComponent {
+  @Input() question! : Question ;
 
 }

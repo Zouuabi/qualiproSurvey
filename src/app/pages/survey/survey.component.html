@@ -2,16 +2,40 @@
     <section class="card">
         <h2 class="section">Section 1</h2>
     </section>
+    <form [formGroup]="survey" (ngSubmit)="onSubmit()">
+        @for (  question of questions ; track question) {
+          
+          @switch (question.type) {
+            @case ("multiple-choice") {
+              <app-multiple-choice [question]="question"></app-multiple-choice>
+            }
+            @case ("simple-matrix") {
+              <app-simple-matrix [question]="question"></app-simple-matrix>
+            }
+            @case ("double-matrix") {
+              <app-double-matrix [question]="question"></app-double-matrix>
+            }
+            @case ("linear-scale") {
+              <app-linear-scale [question]="question"></app-linear-scale>
+            }
+            @case ("free-response") {
+              <app-free-response [question]="question"></app-free-response>
+            }
+            @case ('main-question') {
 
-    <form [formGroup]="survey">
+              <app-main-question [question]="question" [controller]="getFormControl(question.id)"></app-main-question>
+            }
+            @default {
+              <p>Unknown question type</p>
+            }
+          }
+        }
+        <div>
+          {{survey.value}}
+        </div>
+        <button type="submit" [disabled]="!survey.valid">Submit</button>
+      </form>
 
-        <app-main-question [controller]="nameControl"> </app-main-question>
-        <app-simple-matrix> </app-simple-matrix>
-        <app-double-matrix></app-double-matrix>
-
-    </form>
-
-    
 
 
 

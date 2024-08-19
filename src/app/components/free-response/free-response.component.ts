@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Question } from '../../models/question.model';
 
 @Component({
   selector: 'app-free-response',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './free-response.component.css'
 })
 export class FreeResponseComponent {
-
+  @Input() question! : Question ;
 }
